@@ -350,15 +350,12 @@ Remove-Item .\app.zip
 3. `08_CLI_Deployment.png` - `az webapp deployment` -komennon onnistunut vastaus
 4. `09_CLI_Swagger.png` - Swagger UI (sama kuin Visual Studio -menetelmässä)
 
-**Tallenna komennot:**
-
-Luo tiedosto `deploy-commands.txt` projektin juureen ja tallenna kaikki käyttämäsi komennot järjestyksessä.
 
 ---
 
 ## Bonus: Luo PowerShell-skripti
 
-Automatisoi deployment luomalla skripti `deploy.ps1`:
+Automatisoi deployment luomalla skripti (eli tekee tuon automaattiseti, joka aiemmassa osiossa tehtiin) `deploy.ps1`:
 
 ```powershell
 # ====================================
@@ -418,7 +415,7 @@ Remove-Item .\app.zip
 
 **1. Pictures-kansio kuvakaappauksilla:**
 
-Luo `Pictures` -kansio projektin juureen ja tallenna sinne kaikki kuvakaappaukset:
+ `Pictures` -kansioon tallenna sinne kaikki kuvakaappaukset:
 
 **Visual Studio -julkaisu:**
 - ✅ `01_VS_Publish_Profile.png` - Visual Studio Publish-profiili
@@ -436,12 +433,9 @@ Luo `Pictures` -kansio projektin juureen ja tallenna sinne kaikki kuvakaappaukse
 **Azure Portal:**
 - ✅ `10_Azure_Portal.png` - App Service Overview -sivu Azure Portalissa
 
-**2. Tekstitiedosto (deploy-commands.txt):**
-- ✅ Kaikki Azure CLI -komennot järjestyksessä
-- ✅ Kommentit selittämään mitä kukin komento tekee
 
 **3. PowerShell-skripti (deploy.ps1) - BONUS:**
-- ✅ Toimiva automatisoitu deployment-skripti
+- ✅ Toimiva automatisoitu deployment-skripti. Tallenna scripti projektin juureen scripts kansion alle
 
 ---
 
@@ -470,7 +464,6 @@ Luo `Pictures` -kansio projektin juureen ja tallenna sinne kaikki kuvakaappaukse
 
 ### Hylätty (0-1)
 - Sovellus ei julkaistu onnistuneesti
-- Dokumentaatio puuttuu
 - Ei todisteta että sovellus toimii Azuressa
 
 ---
@@ -528,6 +521,3 @@ az webapp log download --name NIMI --resource-group RG
 
 ---
 
-**Onnea tehtävän tekemiseen! 🚀**
-
-Jos kohtaat ongelmia, kysy opettajalta tai kurssitovereilta. Muista dokumentoida myös virhetilanteet - ne ovat osa oppimisprosessia!

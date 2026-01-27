@@ -29,6 +29,10 @@ Kun pushaat muutoksen GitHubiin:
 
 ## Vaihe 1: Luo GitHub Repository
 
+Tehtävä tehdään classroomin kautta, joten sinulla on olemassa jo repository tälle. 
+
+Jos classroom repon alle ei voi tehdä actioneita, niin siinä tapauksessa tee repo sinun omalle github tilille. Alla ohjeet sille, jos classroom ei toimi. Voit myös puskea koodit käyttämällä esim Visual Studion graafista käyttöliittymää.
+
 ### 1.1 Luo uusi repository GitHubissa
 
 1. Avaa [GitHub.com](https://github.com)
@@ -387,18 +391,10 @@ Varmista että `Pictures` -kansio on olemassa projektin juuressa.
 
 ### Tallenna tiedostot:
 
-Seuraavat tiedostot ovat jo repositoryssä:
+Seuraavat tiedostot ovat jo repositoryssä, jotka olet tehnyt aiemmissa vaiheessa:
 - `.github/workflows/azure-deploy.yml`
 - `.gitignore`
 
-### Kirjaa tiedot:
-
-Luo tiedosto `DEPLOYMENT_INFO.txt` projektin juureen ja kirjaa:
-- GitHub repository URL
-- Azure App Service URL
-- Kuinka kauan ensimmäinen deployment kesti?
-- Kuinka kauan toinen (muutos) deployment kesti?
-- Toimiko automaattinen deployment?
 
 ---
 
@@ -469,12 +465,6 @@ Varmista että `Pictures` -kansiossa on seuraavat kuvat:
 - ✅ `15_Workflow_Log.png` - Workflow log (yksityiskohdat)
 - ✅ `16_Swagger_Updated.png` - Swagger UI (päivitetty sovellus)
 
-**3. DEPLOYMENT_INFO.txt tiedosto:**
-- ✅ Azure App Service URL
-- ✅ GitHub repository URL
-- ✅ Ensimmäinen deployment: ___ minuuttia
-- ✅ Toinen deployment (muutos): ___ minuuttia
-- ✅ Toimiko automaattinen deployment: Kyllä/Ei
 
 ---
 
@@ -490,7 +480,6 @@ Varmista että `Pictures` -kansiossa on seuraavat kuvat:
 ### Hyvä (4)
 - Workflow toimii
 - Deployment onnistuu
-- Dokumentaatio kattava
 - Kaikki kuvakaappaukset mukana
 
 ### Tyydyttävä (3)
@@ -501,12 +490,10 @@ Varmista että `Pictures` -kansiossa on seuraavat kuvat:
 ### Välttävä (2)
 - Workflow luotu mutta ei toimi täysin
 - Yritystä näkyy
-- Dokumentaatio puutteellinen
 
 ### Hylätty (0-1)
 - Workflow ei toimi
 - Ei todisteta automaattista deploymenttia
-- Dokumentaatio puuttuu
 
 ---
 
@@ -538,12 +525,12 @@ Olet nyt luonut automaattisen CI/CD-putken:
 ✅ Sovellus päivittyy tuotannossa
 ```
 
-**Ei enää manuaalista deploymenttia!** 🎉
+**Ei enää manuaalista deploymenttia!** 
 
 Kun pushaat muutoksen GitHubiin, sovellus päivittyy automaattisesti Azureen 2-4 minuutissa.
 
 ---
 
-**Onnea tehtävän tekemiseen! 🚀**
+**Onnea tehtävän tekemiseen! **
 
 Jos kohtaat ongelmia, tarkista vianmääritys-osio tai kysy apua.

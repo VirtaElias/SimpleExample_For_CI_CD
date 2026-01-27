@@ -830,14 +830,6 @@ Varmista että `Pictures` -kansiossa on seuraavat kuvat (8 kpl):
 - ✅ `23_Swagger_Validation_Error.png` - Swagger validointivirhe (400 Bad Request)
 - ✅ `24_Swagger_Success.png` - Swagger onnistunut luonti (201 Created)
 
-**3. PART3_SUMMARY.txt tiedosto:**
-
-Luo tiedosto `PART3_SUMMARY.txt` projektin juureen ja vastaa:
-- ✅ Montako testiä kirjoitit yhteensä? (tavoite 15+)
-- ✅ Lyhyt selitys (3-5 lausetta): Miksi domain-pohjainen validointi on hyvä?
-- ✅ Miksi private setterit ovat hyödyllisiä?
-- ✅ GitHub repository URL
-- ✅ Azure App Service URL
 
 ---
 
@@ -901,10 +893,9 @@ Olet nyt rakentanut tuotantotasoisen CI/CD-putken domain-pohjaisella validoinnil
 - ✅ **CI/CD** - Automaattinen prosessi varmistaa laadun
 - ✅ **Rikkinäistä koodia ei julkaista tuotantoon!**
 
-**Tämä on ammattimainen Clean Architecture -lähestymistapa!** 🎯
+**Tämä on ammattimainen Clean Architecture -lähestymistapa!** 
 
 ---
 
-**Onnea tehtävän tekemiseen! 🚀**
 
 Jos kohtaat ongelmia, tarkista vianmääritys-osio tai testaa ensin lokaalisti komennolla `dotnet test`.

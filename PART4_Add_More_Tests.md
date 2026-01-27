@@ -171,8 +171,8 @@ public async Task<UserDto> CreateAsync(CreateUserDto createUserDto)
         throw new InvalidOperationException($"Käyttäjä sähköpostilla {createUserDto.Email} on jo olemassa");
     }
 
-    // DOMAIN LAYER VALIDOINTI: User.Create validoi automaattisesti
-    User user = User.Create(
+    // DOMAIN LAYER VALIDOINTI: Konstruktori validoi automaattisesti
+    User user = new User(
         createUserDto.FirstName,
         createUserDto.LastName,
         createUserDto.Email
@@ -335,7 +335,7 @@ public class UserServiceTests
             Email = "existing@example.com"
         };
 
-        User existingUser = User.Create("Maija", "Virtanen", "existing@example.com");
+        User existingUser = new User("Maija", "Virtanen", "existing@example.com");
 
         // Mock: Email on jo käytössä!
         _mockRepository
@@ -619,7 +619,7 @@ public class UserRepositoryIntegrationTests : IDisposable
     public async Task AddAsync_ShouldAddUserToDatabase()
     {
         // Arrange
-        User user = User.Create("Matti", "Meikäläinen", "matti@example.com");
+        User user = new User("Matti", "Meikäläinen", "matti@example.com");
 
         // Act
         User result = await _repository.AddAsync(user);
@@ -637,7 +637,7 @@ public class UserRepositoryIntegrationTests : IDisposable
     public async Task GetByEmailAsync_ShouldFindUserByEmail()
     {
         // Arrange
-        User user = User.Create("Matti", "Meikäläinen", "test@example.com");
+        User user = new User("Matti", "Meikäläinen", "test@example.com");
         await _repository.AddAsync(user);
 
         // Act
