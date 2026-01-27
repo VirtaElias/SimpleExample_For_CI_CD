@@ -1,0 +1,20 @@
+## Ignore Visual Studio temporary files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+publish/
+*.zip
+
+## NuGet
+packages/
+*.nupkg
+
+## Others
+*.log
+.vscode/
