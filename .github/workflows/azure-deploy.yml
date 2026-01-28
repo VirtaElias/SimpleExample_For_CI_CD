@@ -9,7 +9,10 @@ on:
 
 env:
   DOTNET_VERSION: '9.0.x'
-  AZURE_WEBAPP_NAME: 'OpetusTestiVirta'  # Vaihda tähän!
+  AZURE_WEBAPP_NAME: 'OpetusTestiVirta'
+  LANG: C.UTF-8
+  LC_ALL: C.UTF-8
+
 
 jobs:
   # Job 1: Build ja testit (CI)
