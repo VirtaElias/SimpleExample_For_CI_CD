@@ -12,6 +12,7 @@ env:
   AZURE_WEBAPP_NAME: 'OpetusTestiVirta'
   LANG: C.UTF-8
   LC_ALL: C.UTF-8
+  DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: false
 
 
 jobs:
