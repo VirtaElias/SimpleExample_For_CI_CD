@@ -59,6 +59,10 @@ public class UsersController : ControllerBase
         {
             return BadRequest(new { message = ex.Message });
         }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(new { message = ex.Message }); // 409 Conflict
+        }
     }
 
     /// <summary>
